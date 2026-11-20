@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es" data-type="software">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sebastián Montalvo</title>
+<meta name="description" content="Sebastián Montalvo: estudiante de Ingeniería en Ciberseguridad en la UDLA, pasante de Gobierno de Datos y creador de páginas web para negocios en Quito.">
+<meta name="page-type" content="software">
+<meta name="site-kind" content="software">
+<meta property="og:title" content="Sebastián Montalvo · Ciberseguridad, datos y páginas web">
+<meta property="og:description" content="Estudiante de Ciberseguridad en Quito. Trabajo con datos en un banco y construyo páginas web para negocios con pedidos por WhatsApp.">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Tipo: software/tech (portafolio de un estudiante de ciberseguridad que construye webs). Acción principal: pedir una página web. Secciones: hero · cifras · sobre mí · webs · ciberseguridad y datos · guiño musical (captura de REAPER) · contacto. -->
+<a class="skip" href="#webs">Saltar al contenido</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="Sebastián Montalvo, inicio">SEBASTIÁN<span>MONTALVO</span></a>
+    <nav class="nav-links" id="menu" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#webs">Webs</a>
+      <a href="#ciber">Ciberseguridad</a>
+      <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm" href="https://wa.me/593991872116?text=Hola%20Sebasti%C3%A1n%2C%20vi%20tu%20web%20y%20quiero%20una%20p%C3%A1gina%20para%20mi%20negocio" target="_blank" rel="noopener">Pedir una web</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Abrir menú</span><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" data-enter aria-labelledby="h1">
+    <canvas class="fx" id="fx" aria-hidden="true"></canvas>
+    <button class="fx-pause" id="fxPause" type="button" aria-pressed="false">Pausar fondo</button>
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <p class="tag"><span class="dot" aria-hidden="true"></span>Quito, Ecuador · Abierto a proyectos</p>
+        <p class="hello">Hola, soy <b>Sebastián Montalvo</b></p>
+        <h1 id="h1"><span class="ln">Construyo <em>webs</em></span> <span class="ln">y estudio cómo</span> <span class="ln"><em>romperlas</em>.</span></h1>
+        <p class="hero-sub">Estudio Ingeniería en Ciberseguridad en la UDLA, hago mi pasantía de Gobierno de Datos en un banco y diseño páginas web para negocios que reciben pedidos y citas por WhatsApp.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#webs">Ver mis páginas web</a>
+          <a class="btn btn-ghost" href="cv.pdf" target="_blank" rel="noopener">Ver mi CV</a>
+        </div>
+      </div>
+      <div class="hero-work" aria-label="Capturas de dos páginas web hechas por Sebastián">
+        <figure class="dev dev-desk"><img src="img/servimedin-d.jpg" alt="Página de Servimedin, consultorio del dolor en Tulcán, vista en computadora" width="1800" height="1125" fetchpriority="high"></figure>
+        <figure class="dev dev-phone"><img src="img/motos-m.jpg" alt="Página de Miyawi Motos vista en celular" width="780" height="1688"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats theme-light" aria-label="En números">
+    <div class="wrap stats-in">
+      <div class="stat"><p class="num"><span data-count="6">6</span></p><p class="lbl">certificaciones de Cisco, AWS y Red Hat, verificables en Credly</p></div>
+      <div class="stat"><p class="num"><span data-count="25237" data-sep>25.237</span></p><p class="lbl">registros validados con Python en el banco, con 261 correcciones verificables</p></div>
+      <div class="stat"><p class="num"><span data-count="5">5</span><sup>.º</sup></p><p class="lbl">semestre de Ingeniería en Ciberseguridad en la UDLA</p></div>
+      <div class="stat"><p class="num"><span data-count="4">4</span></p><p class="lbl">tamaños de pantalla en los que pruebo cada web antes de entregarla</p></div>
+    </div>
+  </section>
+
+  <section class="sec about" id="sobre-mi" aria-labelledby="h-about" style="--h:1">
+    <div class="wrap about-in">
+      <figure class="about-ph"><img src="img/art/seba.jpg" alt="Retrato de Sebastián Montalvo con saco verde oscuro y camiseta negra" width="1000" height="1292" loading="lazy"></figure>
+      <div class="about-text">
+        <p class="kicker">Sobre mí</p>
+        <h2 id="h-about">De Tulcán, en Quito, con <em>demasiadas</em> ideas</h2>
+        <p class="say" id="say">Me gusta entender cómo funcionan las cosas por dentro: un sistema, una red, una base de datos, una página web. Las desarmo hasta saber por qué funcionan y después hago las mías.</p>
+        <p class="lead">Me gustan las cosas dichas claro. Si una página se ve mal en el celular, la arreglo antes de entregarla. Si algo no lo sé, lo digo y lo aprendo.</p>
+        <div class="about-side">
+          <div class="panel">
+          <h3 class="mini-h">Ahora mismo</h3>
+          <ul class="now">
+            <li><b>Pasantía</b><span>Gobierno de Datos en el Banco General Rumiñahui</span></li>
+            <li><b>Universidad</b><span>5.º semestre: forense, software seguro y redes</span></li>
+            <li><b>Webs</b><span>Abierto a mis primeros clientes</span></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec webs theme-light" id="webs" aria-labelledby="h-webs" style="--h:2">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-webs">Páginas web <em>para negocios</em></h2>
+        <p>Diseño a la medida de tu marca, catálogo o servicios, y pedidos o citas que te llegan directo a WhatsApp. Antes de entregarla, reviso cada página en un navegador real en cuatro tamaños de pantalla, del monitor al celular.</p>
+      </div>
+
+      <article class="case">
+        <div class="case-shots">
+          <figure class="shot shot-a"><img src="img/motos-d.jpg" alt="Inicio de Miyawi Motos: motociclista junto a su moto en una vía de montaña al atardecer" width="1800" height="1125" loading="lazy"></figure>
+          <figure class="shot shot-b"><img src="img/motos-d2.jpg" alt="Catálogo de Miyawi Motos con casco, chaqueta y guantes" width="1800" height="1125" loading="lazy"></figure>
+        </div>
+        <div class="case-text">
+          <p class="kicker">Tienda online · Demo</p>
+          <h3>Miyawi Motos</h3>
+          <p>Tienda de equipo para motociclistas en Quito. El cliente elige talla, arma su pedido y lo envía por WhatsApp con el total calculado.</p>
+          <ul class="ticks">
+            <li>Catálogo con filtros y selector de talla</li>
+            <li>Carrito con barra de envío gratis desde $100</li>
+            <li>Fotos de producto generadas con IA en Figma</li>
+          </ul>
+          <div class="case-links">
+            <a class="btn btn-primary btn-sm" href="https://zheta-ai.github.io/miyawi-motos/" target="_blank" rel="noopener">Ver demo en vivo</a>
+            <a class="link" href="https://github.com/Zheta-ai/miyawi-motos" target="_blank" rel="noopener">Ver código en GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case case-rev">
+        <div class="case-shots">
+          <figure class="shot shot-a"><img src="img/servimedin-d2.jpg" alt="Sección de farmacias de Servimedin con dos sedes y entrega a domicilio" width="1800" height="1125" loading="lazy"></figure>
+          <figure class="shot shot-phone"><img src="img/servimedin-m.jpg" alt="Servimedin vista en celular" width="780" height="1688" loading="lazy"></figure>
+        </div>
+        <div class="case-text">
+          <p class="kicker">Salud · Demo</p>
+          <h3>Servimedin</h3>
+          <p>Consultorio del dolor y dos farmacias en Tulcán. El paciente pide su cita o cotiza su receta y el mensaje llega listo por WhatsApp.</p>
+          <ul class="ticks">
+            <li>Formulario de cita que avisa si falta un dato</li>
+            <li>"Cotiza tu receta" con foto, como las grandes cadenas</li>
+            <li>Trayectoria del médico tomada de su hoja de vida</li>
+          </ul>
+          <div class="case-links">
+            <a class="btn btn-primary btn-sm" href="https://zheta-ai.github.io/servimedin/" target="_blank" rel="noopener">Ver demo en vivo</a>
+            <a class="link" href="https://github.com/Zheta-ai/servimedin" target="_blank" rel="noopener">Ver código en GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="includes">
+        <h3 class="mini-h">Qué incluye tu página</h3>
+        <ol class="steps">
+          <li><b>Tu marca, no una plantilla.</b> Colores, tipografía y fotos pensadas para tu negocio.</li>
+          <li><b>Pedidos por WhatsApp.</b> Carrito o formulario que arma el mensaje completo. No guardo datos de tus clientes.</li>
+          <li><b>Probada en celular.</b> Más de la mitad de tus clientes van a entrar desde el teléfono.</li>
+          <li><b>Tu dominio, a tu nombre.</b> La página es tuya: .com o .ec.</li>
+        </ol>
+        <a class="btn btn-primary" href="https://wa.me/593991872116?text=Hola%20Sebasti%C3%A1n%2C%20vi%20tu%20web%20y%20quiero%20una%20p%C3%A1gina%20para%20mi%20negocio" target="_blank" rel="noopener">Cotizar mi página por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ciber" id="ciber" aria-labelledby="h-ciber" style="--h:1">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-ciber">Ciberseguridad <em>y datos</em></h2>
+        <p>Estudio Ingeniería en Ciberseguridad en la Universidad de Las Américas y hago mi pasantía en Gobierno de Datos del Banco General Rumiñahui, con Power BI, SQL Server, Python y Excel. Me interesa cómo se rompen los sistemas para saber protegerlos. <a class="link" href="cv.pdf" target="_blank" rel="noopener">Ver mi CV en PDF</a></p>
+      </div>
+
+      <div class="ciber-grid">
+        <div class="term" role="img" aria-label="Terminal que compara el hash SHA-256 de una evidencia y su copia forense: son iguales">
+          <div class="term-bar"><i></i><i></i><i></i><span>forense — lab de integridad</span></div>
+<pre class="term-body"><span class="p">$</span> sha256sum evidencia.dd
+<span class="h">9f2c4e…b07a41e</span>  evidencia.dd
+<span class="p">$</span> sha256sum copia_forense.dd
+<span class="h">9f2c4e…b07a41e</span>  copia_forense.dd
+<span class="ok">✓ hashes iguales: la copia es íntegra</span>
+<span class="p">$</span> <span class="c">steghide info foto.jpg</span>
+<span class="m">  ¿datos ocultos?  revisando…</span></pre>
+        </div>
+
+        <div class="certs">
+          <h3 class="mini-h">Certificaciones verificables</h3>
+          <ul class="cert-list">
+            <li><b>Cisco Certified Support Technician: IT Support</b><span>Cisco · certificación con examen, vigente hasta 2031</span><a class="link" href="https://www.credly.com/users/sebastian-montalvo.49bef3b8" target="_blank" rel="noopener" aria-label="Verificar CCST IT Support en Credly">Verificar</a></li>
+            <li><b>AWS Academy Graduate: Cloud Foundations</b><span>Amazon Web Services · jun 2026</span><a class="link" href="https://www.credly.com/users/guillermo-montalvo" target="_blank" rel="noopener" aria-label="Verificar Cloud Foundations en Credly">Verificar</a></li>
+            <li><b>Getting Started with Linux Fundamentals</b><span>Red Hat · may 2026</span><a class="link" href="https://www.credly.com/users/guillermo-montalvo" target="_blank" rel="noopener" aria-label="Verificar Linux Fundamentals en Credly">Verificar</a></li>
+            <li><b>IT Customer Support Basics</b><span>Cisco · abr 2026</span><a class="link" href="https://www.credly.com/users/guillermo-montalvo" target="_blank" rel="noopener" aria-label="Verificar IT Customer Support Basics en Credly">Verificar</a></li>
+            <li><b>Python Essentials 1 y 2</b><span>Cisco · ene y may 2025</span><a class="link" href="https://www.credly.com/users/guillermo-montalvo" target="_blank" rel="noopener" aria-label="Verificar Python Essentials en Credly">Verificar</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stack" aria-label="Herramientas que uso">
+        <span><img src="icons/linux-tux.svg" alt="" width="22" height="22">Linux</span>
+        <span><img src="icons/docker.svg" alt="" width="22" height="22">Docker</span>
+        <span><img src="icons/kubernetes.svg" alt="" width="22" height="22">Kubernetes</span>
+        <span><img src="icons/postgres.svg" alt="" width="22" height="22">PostgreSQL</span>
+        <span><img src="icons/python.svg" alt="" width="22" height="22">Python</span>
+        <span><img src="icons/go.svg" alt="" width="22" height="22">Go</span>
+        <span><img src="icons/java.svg" alt="" width="22" height="22">Java</span>
+        <span><img src="icons/aws.svg" alt="" width="22" height="22">AWS</span>
+        <span><img src="icons/googlecloud.svg" alt="" width="22" height="22">Google Cloud</span>
+        <span><img src="icons/redhat.svg" alt="" width="22" height="22">Red Hat</span>
+        <span><img src="icons/xlsx.svg" alt="" width="22" height="22">Excel</span>
+        <span><img src="icons/power-bi.svg" alt="" width="22" height="22">Power BI</span>
+        <span><img src="icons/git.svg" alt="" width="22" height="22">Git</span>
+        <span><img src="icons/playwright.svg" alt="" width="22" height="22">Playwright</span>
+        <span><img src="icons/figma.svg" alt="" width="22" height="22">Figma</span>
+      </div>
+
+      <div class="work-grid">
+        <article class="work work-lead">
+          <p class="kicker">Experiencia · oct 2026 – hoy</p>
+          <h3>Pasante de Gobierno de Datos, Banco General Rumiñahui</h3>
+          <ul class="ticks">
+            <li>Audité la seguridad por filas (RLS) de un tablero corporativo: encontré perfiles con más acceso del previsto y validé el filtrado por agencia con pruebas por usuario.</li>
+            <li>Validé con Python 25.237 registros sacados de reportes PDF: 261 correcciones verificables y 67 casos ambiguos separados para revisión humana, en vez de adivinarlos.</li>
+            <li>Recuperé un proyecto de Power BI (PBIP) que no abría: corregí un JSON y la codificación UTF-8 con BOM, con respaldo previo y sin tocar medidas ni reglas de negocio.</li>
+            <li>Corro y verifico el proceso diario de calidad de datos en SQL Server. Escalé un incidente de permisos que habría publicado un reporte sobre datos no generados.</li>
+          </ul>
+        </article>
+        <article class="work">
+          <p class="kicker"><img src="icons/xlsx.svg" alt="" width="16" height="16">Excel avanzado</p>
+          <h3>Power Query, macros y modelos</h3>
+          <p>Limpié 8.000 registros con nombres, teléfonos, montos y fechas en cuatro formatos y eliminé 1.286 duplicados por cédula.</p>
+        </article>
+        <article class="work">
+          <p class="kicker"><img src="icons/power-bi.svg" alt="" width="16" height="16">Power BI</p>
+          <h3>Modelo semántico, DAX y RLS</h3>
+          <p>Modelo relaciones, escribo medidas en DAX y reviso la seguridad por filas. Trabajo los proyectos en PBIP y TMDL, así se pueden versionar y revisar como código.</p>
+        </article>
+        <article class="work">
+          <p class="kicker">IA aplicada</p>
+          <h3>Copilot, agentes y verificación</h3>
+          <p>Uso Microsoft 365 Copilot y agentes especializados para revisar código, procesar datos y documentar. Cada resultado lo contrasto con la fuente. En el banco propuse un piloto de agentes para estandarizar entregables.</p>
+        </article>
+        <article class="work">
+          <p class="kicker"><img src="icons/googlecloud.svg" alt="" width="16" height="16">Cloud · UDLA</p>
+          <h3>Arquitectura en Google Cloud</h3>
+          <p>Diseñé la arquitectura de servicios de un caso empresarial y comparé IaaS, PaaS y SaaS para justificar el proveedor.</p>
+        </article>
+        <article class="work">
+          <p class="kicker"><img src="icons/kubernetes.svg" alt="" width="16" height="16">Infraestructura · UDLA</p>
+          <h3>Microservicios en Kubernetes</h3>
+          <p>Desplegamos en equipo la tienda de microservicios Online Boutique con Docker y Minikube sobre una VM con Ubuntu Server, y analizamos cómo se comunican y orquestan los servicios.</p>
+        </article>
+        <article class="work">
+          <p class="kicker">Seguridad · UDLA</p>
+          <h3>Forense y software seguro</h3>
+          <p>Adquisición y análisis de evidencia digital con la metodología CHFI v11, laboratorios de codificación segura y modelado STRIDE de un sistema de pagos universitario.</p>
+        </article>
+        <article class="work">
+          <p class="kicker">Redes y código · UDLA</p>
+          <h3>CCNA, hardening y criptografía</h3>
+          <p>Switching y routing con VLAN y Spanning Tree en Cisco, hardening con guías CIS, un visualizador de algoritmos en Java y matemáticas para criptografía.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec musica guino" id="musica" aria-labelledby="h-mus" style="--h:1">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-mus">Y fuera del horario, <em>hago música</em></h2>
+        <p>Grabo y mezclo mis temas en casa, en REAPER. Esta es la cadena de voz del primero.</p>
+      </div>
+    </div>
+    <div class="wrap mus-row2">
+        <figure class="cover"><img src="img/art/portada.jpg" alt="Portada dibujada a mano: rostro entre trazos negros sobre papel teñido de rojo, con una frase en japonés" width="1400" height="719" loading="lazy"></figure>
+      <div class="daw" role="img" aria-label="Cadena de voz en REAPER: ReaEQ, Graillon 3 y ReaComp, con envíos a reverb corto, reverb largo y delay">
+        <div class="daw-top"><span>REAPER · una mrda under ecuatoriana</span><span>96 kHz · 24 bit</span></div>
+        <div class="daw-chain">
+          <p class="daw-h">Cadena de la voz</p>
+          <ol>
+            <li><b>ReaEQ</b><span>Paso alto 80 Hz</span></li>
+            <li><b>Graillon 3</b><span>Afinación en la tonalidad del tema</span></li>
+            <li><b>ReaComp</b><span>3:1 · 10 ms / 100 ms</span></li>
+          </ol>
+        </div>
+        <div class="daw-tracks">
+          <div class="trk"><span>Voz</span><i class="m" style="--a:.85;--d:0s"></i></div>
+          <div class="trk"><span>Dobles</span><i class="m" style="--a:.6;--d:.4s"></i></div>
+          <div class="trk"><span>Reverb corto</span><i class="m" style="--a:.45;--d:.8s"></i></div>
+          <div class="trk"><span>Reverb largo</span><i class="m" style="--a:.35;--d:1.1s"></i></div>
+          <div class="trk"><span>Delay</span><i class="m" style="--a:.4;--d:1.5s"></i></div>
+        </div>
+        <div class="daw-gear"><span>Focusrite Scarlett Solo 4.ª gen</span><span>Fifine K688</span><span>Sennheiser HD 280 Pro</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto" aria-labelledby="h-con">
+    <div class="wrap con-in">
+      <div>
+        <h2 id="h-con">¿Tu negocio necesita <em>su página</em>?</h2>
+        <p>Cuéntame qué vendes y a quién. Te respondo con una propuesta y una primera idea de diseño.</p>
+      </div>
+      <div class="con-actions">
+        <a class="btn btn-light btn-wa" href="https://wa.me/593991872116?text=Hola%20Sebasti%C3%A1n%2C%20vi%20tu%20web%20y%20quiero%20una%20p%C3%A1gina%20para%20mi%20negocio" target="_blank" rel="noopener"><img src="icons/whatsapp.svg" alt="" width="22" height="22">Escribirme por WhatsApp</a>
+        <div class="mail">
+          <span class="mail-txt" id="mailTxt">sbasmontalvo10@gmail.com</span>
+          <button class="btn btn-ghost btn-sm" id="copyMail" type="button">Copiar correo</button>
+        </div>
+        <a class="link" href="cv.pdf" target="_blank" rel="noopener">Ver mi CV en PDF</a>
+        <ul class="socials" aria-label="Perfiles">
+          <li><a href="https://www.linkedin.com/in/sebasti%C3%A1n-montalvo-089637414/" target="_blank" rel="noopener"><img src="icons/linkedin.svg" alt="" width="20" height="20">LinkedIn</a></li>
+          <li><a href="https://github.com/Zheta-ai" target="_blank" rel="noopener"><img src="icons/github.svg" alt="" width="20" height="20" class="inv">GitHub</a></li>
+          <li><a href="https://www.credly.com/users/guillermo-montalvo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" class="sc"><circle cx="12" cy="10" r="6"/><path d="M8.5 15 7 22l5-2.5L17 22l-1.5-7"/></svg>Credly</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="logo" href="#top">SEBASTIÁN<span>MONTALVO</span></a>
+    <p class="foot-note">Quito, Ecuador · Revisada en un navegador real a cuatro anchos. Miyawi Motos y Servimedin son demos con datos y fotos de referencia.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
